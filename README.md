@@ -45,6 +45,20 @@ layout, colunms, sidebar, tab
 
 제품명, 제품특징, 필수포함키워드, 브랜드명, 톤앤매너, 브랜드핵심가치를 토대로 광고문구생성 웹페이지
 
+# ch06
+
+### 01_bard_api_test.py
+
+bard api 사용하여 간단한 질의응답 테스트
+
+### 02_session_state.py
+
+streamlit 특징 해결 : 코드가 재실행되면 이전에 입력한 데이터가 사라지는 것을 seesion_state로 데이터 저장
+
+### 03_chatGPTvsBard.py
+
+ChatGPT vs Bard 응답 비교 웹 프로그램
+
 # information
 
 ### 아나콘다 base 자동활성화 끄기
