@@ -38,7 +38,8 @@ layout, colunms, sidebar, tab
 
 # ch04 : ChatGPT API 사용 요약 프로그램
 
-###streamlit cloud 배포를 위해 실행되는데 필요한 라이브러리 파일 생성 코드
+### streamlit cloud 배포를 위해 실행되는데 필요한 라이브러리 파일 생성 코드
+
 `pip freeze > requirements.txt`
 
 # ch05 : ChatGPT API 사용 광고 문구 생성프로그램
@@ -77,6 +78,16 @@ deepl번역기 API 테스트
 
 ChatGPT, 파파고번역기, 구글 번역기, deepl번역기 비교 웹 프로그램
 
+# ch08 dalle2 사용 이미지 생성, 인스타그램 사진 업로드
+
+### 01_dalle2.py
+
+dalle_2모델을 사용하여 적절한 프롬프트 입력 시 이미지 url 생성
+
+### 02_insta.py
+
+pathlib과 instagrapi, PIL 라이브러리를 사용하여 인스타그램 게시글 업로드
+
 # information
 
 ### 아나콘다 base 자동활성화 끄기
@@ -101,20 +112,26 @@ python -m venv 가상환경이름
 
 # error
 
-## 파이썬 가상환경 라이브러리 txt파일 생성
-
-pip freeze > 파일명.txt
-
-## git pull error
+### git pull error
 
 _git pull origin master error_
+fatal: couldn't find remote ref master
+fatal: Need to specify how to reconcile divergent branches.  
+-> 해결 종류 (3중 택1)
 
-1. fatal: couldn't find remote ref master
-2. fatal: Need to specify how to reconcile divergent branches.  
-   -> 해결
-3. git config pull.rebase true : rebase 후 pull
-4. git config pull.rebase false : revase 없이 pull
-5. git config pull.ff only : fast-forward일때만 pull 허용
+1. git config pull.rebase true : rebase 후 pull
+2. git config pull.rebase false : revase 없이 pull
+3. git config pull.ff only : fast-forward일때만 pull 허용
 
 - rebase : 새 브랜치가 시작된 분기점 커밋을 기준 브랜치의 가장 최근커밋으로 변경하는 작업
 - rebase는 git history가 깔끔해질 수 있지만, 부주의하게 사용할 경우 별도의 알림없이 git history를 영구적으로 변경할 수 있기 때문에 ff-only방식을 추천
+
+### googletrans _AttributeError: 'NoneType' object has no attribute 'group'_ 에러
+
+: 버전 변경
+`pip install googletrans==5` : googletrans 버전 리스트 뽑아줌
+`pip install googletrans==3.1.0a0` : 3.1.0a0 버전 재설치
+
+### googletrans _AttributeError: module 'httpcore' has no attribute 'SyncHTTPTransport'_ 싱크해결
+
+: client.py 파일 수정 , 55번줄 SyncHTTPTransport 객체를 AsyncHTTPProxy로 대체, httpx 호환성문제
