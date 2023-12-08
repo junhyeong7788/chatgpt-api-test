@@ -1,6 +1,8 @@
+# ChatGPT, Bard, googletrans, papagotrans, deepltrans API사용하여 Streamlit Web 페이지 개발 및 배포
+
 # ch01, ch02
 
-chatGPT API를 사용하여 '피자만드는 방법'과 '문장 번역', '프롬프트 답변지정', '프롬프트 어텐션' 등을 test.
+chatGPT API를 사용하여 '피자만드는 방법'과 '문장 번역', '프롬프트 답변지정', '프롬프트 어텐션' 등을 테스트
 
 # ch03 Streamlit basic
 
@@ -54,9 +56,10 @@ button, text_input, box_input, password_input, download_button, radio_button, se
 
 layout, colunms, sidebar, tab
 
-'---'
+# ch04 : ChatGPT API 사용 요약 프로그램
 
-'---'
+###streamlit cloud 배포를 위해 실행되는데 필요한 라이브러리 파일 생성 코드
+`pip freeze > requirements.txt`
 
 # error
 
