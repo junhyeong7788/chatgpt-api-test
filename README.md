@@ -59,6 +59,24 @@ streamlit 특징 해결 : 코드가 재실행되면 이전에 입력한 데이�
 
 ChatGPT vs Bard 응답 비교 웹 프로그램
 
+# ch07 번역기 비교 웹 프로그램
+
+### 01_googletrans.py
+
+구글번역기 라이브러리 테스트
+
+### 02_papagotrans.py
+
+네이버 파파고번역기 API 테스트
+
+### 03_deepltrans.py
+
+deepl번역기 API 테스트
+
+### 04_trans_app.py
+
+ChatGPT, 파파고번역기, 구글 번역기, deepl번역기 비교 웹 프로그램
+
 # information
 
 ### 아나콘다 base 자동활성화 끄기
