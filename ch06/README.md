@@ -11,7 +11,7 @@
 
 ![[Pasted image 20231207121807.png]]
 
-## api error
+## bard api error
 
 1. 크롬 설정 -> 개인 정보 보안 -> 인터넷 기록 삭제 (쿠키삭제)
 2. 시크릿모드
