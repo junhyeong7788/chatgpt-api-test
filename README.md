@@ -6,26 +6,6 @@ chatGPT API를 사용하여 '피자만드는 방법'과 '문장 번역', '프롬
 
 # ch03 Streamlit basic
 
-### 아나콘다 base 자동활성화 끄기
-
-conda config --set auto_activate_base false
-
-### 파이썬 가상환경 (window)
-
-python -m venv 가상환경이름
-가상환경이름₩Scripts₩activate.bat (bat을 붙이는 이유 : 파일 2개일수도 있음)
-
-### 파이썬 가상환경 ( macOS )
-
-가상환경 만들기 : python3 -m venv ./{your venv name}
-가상환경 활성화 : source {your venv name}/bin/activate
-가상환경 비활성화 : deactivate
-
-### 파이썬 가상환경 사용이유
-
-- 가상환경은 프로젝트 별로 패키지를 관리하기 위함
-- 프로젝트별로 안정적인 패키지 버전 관리 가능
-
 ### Streamlit
 
 : 개발자들이 쉽게 대화형 웹 어플리케이션을 만들 수 있는 python 오픈소스 라이브러리  
@@ -60,6 +40,32 @@ layout, colunms, sidebar, tab
 
 ###streamlit cloud 배포를 위해 실행되는데 필요한 라이브러리 파일 생성 코드
 `pip freeze > requirements.txt`
+
+# ch05 : ChatGPT API 사용 광고 문구 생성프로그램
+
+제품명, 제품특징, 필수포함키워드, 브랜드명, 톤앤매너, 브랜드핵심가치를 토대로 광고문구생성 웹페이지
+
+# information
+
+### 아나콘다 base 자동활성화 끄기
+
+conda config --set auto_activate_base false
+
+### 파이썬 가상환경 (window)
+
+python -m venv 가상환경이름
+가상환경이름₩Scripts₩activate.bat (bat을 붙이는 이유 : 파일 2개일수도 있음)
+
+### 파이썬 가상환경 ( macOS )
+
+가상환경 만들기 : python3 -m venv ./{your venv name}
+가상환경 활성화 : source {your venv name}/bin/activate
+가상환경 비활성화 : deactivate
+
+### 파이썬 가상환경 사용이유
+
+- 가상환경은 프로젝트 별로 패키지를 관리하기 위함
+- 프로젝트별로 안정적인 패키지 버전 관리 가능
 
 # error
 
